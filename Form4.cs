@@ -46,6 +46,7 @@ namespace DatabaseOdevi3
                     {
                         comboBoxProjectID.Items.Clear(); // Clear existing items in comboBoxProjectID
                         comboBox1.Items.Clear();
+                        comboBoxProjectIDs.Items.Clear();
 
                         while (reader.Read())
                         {
@@ -53,9 +54,12 @@ namespace DatabaseOdevi3
                             int projectId = Convert.ToInt32(reader["ProjectID"]);
                             comboBoxProjectID.Items.Add(projectId);
                             comboBox1.Items.Add(projectId);
+                            comboBoxProjectIDs.Items.Add(projectId);
                         }
                     }
                 }
+
+
             }
             UpdateAverageBudgetLabel();
             UpdateProjectCountLabel();
