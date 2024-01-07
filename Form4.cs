@@ -64,7 +64,7 @@ namespace DatabaseOdevi3
             UpdateAverageBudgetLabel();
             UpdateProjectCountLabel();
             UpdateSumOfBudgetsLabel();
-            UpdateAvailableProjectsCountLabel()
+            UpdateAvailableProjectsCountLabel();
 
         }
 
@@ -327,6 +327,5 @@ namespace DatabaseOdevi3
                 }
             }
         }
-
     }
 }

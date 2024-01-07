@@ -67,12 +67,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.comboBoxProjectIDs = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.dataGridViewFeedbacks = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFeedbacks)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -421,52 +416,11 @@
             this.label20.TabIndex = 55;
             this.label20.Text = "label20";
             // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Roboto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(15, 650);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(96, 22);
-            this.label21.TabIndex = 56;
-            this.label21.Text = "Feedbacks";
-            // 
-            // comboBoxProjectIDs
-            // 
-            this.comboBoxProjectIDs.FormattingEnabled = true;
-            this.comboBoxProjectIDs.Location = new System.Drawing.Point(15, 707);
-            this.comboBoxProjectIDs.Name = "comboBoxProjectIDs";
-            this.comboBoxProjectIDs.Size = new System.Drawing.Size(74, 28);
-            this.comboBoxProjectIDs.TabIndex = 57;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(15, 684);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(74, 20);
-            this.label22.TabIndex = 58;
-            this.label22.Text = "Project ID";
-            // 
-            // dataGridViewFeedbacks
-            // 
-            this.dataGridViewFeedbacks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFeedbacks.Location = new System.Drawing.Point(116, 684);
-            this.dataGridViewFeedbacks.Name = "dataGridViewFeedbacks";
-            this.dataGridViewFeedbacks.RowHeadersWidth = 51;
-            this.dataGridViewFeedbacks.RowTemplate.Height = 29;
-            this.dataGridViewFeedbacks.Size = new System.Drawing.Size(300, 91);
-            this.dataGridViewFeedbacks.TabIndex = 59;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1344, 808);
-            this.Controls.Add(this.dataGridViewFeedbacks);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.comboBoxProjectIDs);
-            this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -509,7 +463,6 @@
             this.Name = "Form4";
             this.Text = "Projects";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFeedbacks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -555,9 +508,5 @@
         private Label label18;
         private Label label19;
         private Label label20;
-        private Label label21;
-        private ComboBox comboBoxProjectIDs;
-        private Label label22;
-        private DataGridView dataGridViewFeedbacks;
     }
 }
