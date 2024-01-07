@@ -54,6 +54,8 @@ namespace DatabaseOdevi3
                     }
                 }
             }
+            UpdateAveragePasswordLengthLabel();
+            UpdateTeacherCountLabel();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -196,6 +198,66 @@ namespace DatabaseOdevi3
                     }
                 }
             }
+        }
+
+        private void UpdateAveragePasswordLengthLabel()
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT AVG(LENGTH(password)) FROM teacher";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    object result = command.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        double averagePasswordLength = Convert.ToDouble(result);
+                        labelAveragePasswordLength.Text = $"Average Password Length: {averagePasswordLength:F2}";
+                    }
+                    else
+                    {
+                        labelAveragePasswordLength.Text = "No data available";
+                    }
+                }
+            }
+        }
+
+        private void UpdateTeacherCountLabel()
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(*) FROM teacher";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    object result = command.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        int teacherCount = Convert.ToInt32(result);
+                        labelTeacherCount.Text = $"Teacher Count: {teacherCount}";
+                    }
+                    else
+                    {
+                        labelTeacherCount.Text = "No data available";
+                    }
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+
+            form6.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+
+            form7.ShowDialog();
         }
     }
 

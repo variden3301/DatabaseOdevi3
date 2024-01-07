@@ -57,6 +57,11 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.labelAveragePasswordLength = new System.Windows.Forms.Label();
+            this.labelTeacherCount = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -308,11 +313,64 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // labelAveragePasswordLength
+            // 
+            this.labelAveragePasswordLength.AutoSize = true;
+            this.labelAveragePasswordLength.Location = new System.Drawing.Point(713, 558);
+            this.labelAveragePasswordLength.Name = "labelAveragePasswordLength";
+            this.labelAveragePasswordLength.Size = new System.Drawing.Size(203, 20);
+            this.labelAveragePasswordLength.TabIndex = 29;
+            this.labelAveragePasswordLength.Text = "labelAveragePasswordLength";
+            // 
+            // labelTeacherCount
+            // 
+            this.labelTeacherCount.AutoSize = true;
+            this.labelTeacherCount.Location = new System.Drawing.Point(713, 590);
+            this.labelTeacherCount.Name = "labelTeacherCount";
+            this.labelTeacherCount.Size = new System.Drawing.Size(58, 20);
+            this.labelTeacherCount.TabIndex = 30;
+            this.labelTeacherCount.Text = "label15";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(728, 431);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(138, 106);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Student";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(934, 431);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(138, 106);
+            this.button5.TabIndex = 32;
+            this.button5.Text = "Teachers";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(730, 382);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(195, 28);
+            this.label15.TabIndex = 33;
+            this.label15.Text = "Assign To Project";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1223, 619);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.labelTeacherCount);
+            this.Controls.Add(this.labelAveragePasswordLength);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -381,5 +439,10 @@
         private Label label13;
         private Label label14;
         private Button button3;
+        private Label labelAveragePasswordLength;
+        private Label labelTeacherCount;
+        private Button button4;
+        private Button button5;
+        private Label label15;
     }
 }
